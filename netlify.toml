@@ -1,0 +1,10 @@
+# Netlify configuration file
+
+[build]
+  # This is the command Netlify will run to build your site.
+  # It first installs the required Python packages, then runs our script.
+  command = "pip install -r requirements.txt && python build_site.py"
+
+  # This is the directory that contains the final website files.
+  # Since our script generates files in the root, we use "." for the current directory.
+  publish = "."

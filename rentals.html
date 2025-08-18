@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/red_LOGO_Vandore.png?v=2025">
+    <title>Vandore Heritage - Our Rentals</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-accent-primary px-5">
+        <nav class="navbar">
+            <div class="container-fluid ps-3 gap-3">
+                <div class="me-auto"></div>
+                <div class="logo-container position-absolute start-50 translate-middle-x" style="margin-top: 2cm;">
+                    <a class="navbar-brand" href="index.html"><img src="image/red_LOGO_Vandore.png?v=2025" alt="Vandore Heritage Logo" class="img-fluid"></a>
+                </div>
+                <div class="w-max-content menu-button-container" style="margin-top: 0.5cm;">
+                    <button class="btn btn-toggler-accent" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDark" aria-controls="offcanvasDark"><i class="fa-solid fa-bars"></i>
+                        Menu</button>
+
+                    <div class="offcanvas offcanvas-end offcanvas-fullwidth text-bg-dark" tabindex="-1"
+                        id="offcanvasDark" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header bg-transparent">
+                            <h5 id="offcanvasRightLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="r-container">
+                                <div class="row row-cols-xl-2 row-cols-1">
+                                    <div class="col col-xl-10 mb-3">
+                                        <div class="d-flex flex-column">
+                                            <div class="navigation">
+                                                <span class="header-text">01. Homepage</span>
+                                                <img src="image/img6.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="Homepage preview">
+                                                <a href="index.html" class="d-flex" style="justify-self: end;" aria-label="Go to Homepage">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">02. Properties</span>
+                                                <img src="image/img5.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="Properties page preview">
+                                                <a href="properties.html" class="d-flex" style="justify-self: end;" aria-label="Go to Properties">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">03. Short Form Rentals</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="Rentals page preview">
+                                                <a href="rentals.html" class="d-flex" style="justify-self: end;" aria-label="Go to Rentals">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">04. About Us</span>
+                                                <img src="image/img33.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="About Us page preview">
+                                                <a href="about.html" class="d-flex" style="justify-self: end;" aria-label="Go to About Us">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">05. Services</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="Services page preview">
+                                                <a href="service.html" class="d-flex" style="justify-self: end;" aria-label="Go to Services">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">06. Contact</span>
+                                                <img src="image/img29.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="Contact page preview">
+                                                <a href="contact.html" class="d-flex" style="justify-self: end;" aria-label="Go to Contact">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">07. News</span>
+                                                <img src="image/img26.png" class="img-fluid rounded-3 nav-image" height="175" width="311" alt="News page preview">
+                                                <a href="blog.html" class="d-flex" style="justify-self: end;" aria-label="Go to News">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-2 mb-3">
+                                        <div class="d-flex flex-column gap-5 accent-primary text-end">
+                                           <div class="d-flex flex-column gap-4">
+                                                <h6>Riga, Latvia</h6>
+                                                <div class="d-flex flex-column gap-3">
+                                                    <span>
+                                                        Skanstes iela 29A–91, Rīga, Latvia
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative bg-attach-cover">
+            <div class="r-container position-relative h-100">
+                <div class="position-absolute top-0 start-0 end-0 bottom-0 h-100 w-100" style="margin-top: 10rem;">
+                    <div class="row row-cols-2">
+                        <div class="col-3 col-xl-2"></div>
+                        <div class="col-9 col-xl-10">
+                            <img src="image/dummy-img-1920x900.jpg" class="img-fluid custom-border rounded-2 w-100" alt="Modern building exterior">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-column gap-5 justify-content-between scrollanimation animated fadeInLeft adr-7 h-100 padding-custom">
+                    <div class="d-flex flex-column gap-2 h-100">
+                        <h1 class="display" style="max-width: 700px;">Our Rentals</h1>
+                        <div class="row row-xl-cols-2 row-cols-1">
+                            <div class="col col-xl-2">
+                                <div class="d-flex flex-column gap-2 align-items-xl-center align-items-start">
+                                    <p>Curated stays in Riga—setup, management, and guest support handled with care.</p>
+                                    <div class="devider"></div>
+                                </div>
+                            </div>
+                            <div class="col col-xl-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Featured Properties -->
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-5">
+                <div class="row row-cols-xl-2 row-cols-1 align-items-end">
+                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
+                        <h3 style="max-width: 400px;">Explore Your Perfect Home</h3>
+                    </div>
+                    <div class="col mb-3 scrollanimation animated fadeInDown adr-7">
+                        <div class="d-flex flex-column gap-2 align-items-end">
+                            <div class="w-max-content" style="justify-self: end;">
+                                <a href="#property-grid"
+                                    class="btn btn-accent d-flex flex-row gap-2 justify-content-center">
+                                    <span>Browse stays</span>
+                                    <i class="rtmicon rtmicon-arrow-down fw-bold"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="filter-drawer d-lg-none">
+                            <button class="btn btn-primary w-100 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter-drawer" aria-controls="filter-drawer">
+                                Filters
+                            </button>
+                        </div>
+                        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="filter-drawer" aria-labelledby="filter-drawer-label">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="filter-drawer-label">Filters</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filter-drawer" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="filter-bar">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="location-search">Location</label>
+                                                <input type="text" id="location-search-mobile" class="form-control" placeholder="City/District/Neighborhood">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label>Price Range</label>
+                                            <div class="input-group">
+                                                <input type="number" id="min-price-mobile" class="form-control" placeholder="Min €">
+                                                <input type="number" id="max-price-mobile" class="form-control" placeholder="Max €">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label>Bedrooms</label>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-outline-primary active">All</button>
+                                                <button type="button" class="btn btn-outline-primary">1</button>
+                                                <button type="button" class="btn btn-outline-primary">2</button>
+                                                <button type="button" class="btn btn-outline-primary">3</button>
+                                                <button type="button" class="btn btn-outline-primary">4</button>
+                                                <button type="button" class="btn btn-outline-primary">5+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-grid gap-2">
+                                                <button class="btn btn-primary" id="apply-filters-mobile">Apply</button>
+                                                <button class="btn btn-secondary" id="clear-filters-mobile">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-bar d-none d-lg-block bg-white p-3 rounded-3">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <label for="location-search">Location</label>
+                                        <input type="text" id="location-search" class="form-control" placeholder="City/District/Neighborhood">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <label>Price Range</label>
+                                    <div class="input-group">
+                                        <input type="number" id="min-price" class="form-control" placeholder="Min €">
+                                        <input type="number" id="max-price" class="form-control" placeholder="Max €">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Bedrooms</label>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-outline-primary active">All</button>
+                                        <button type="button" class="btn btn-outline-primary">1</button>
+                                        <button type="button" class="btn btn-outline-primary">2</button>
+                                        <button type="button" class="btn btn-outline-primary">3</button>
+                                        <button type="button" class="btn btn-outline-primary">4</button>
+                                        <button type="button" class="btn btn-outline-primary">5+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-12">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary" id="apply-filters">Apply</button>
+                                        <button class="btn btn-secondary" id="clear-filters">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="active-filters my-3">
+                            <span id="filter-chips"></span>
+                            <span id="property-count" class="ms-2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="property-grid" class="row row-cols-xl-3 row-cols-lg-2 row-cols-1">
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="569000" data-bedrooms="4">
+                        <div class=" card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Luxury Home Advisors property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>Luxury Home Advisors</h4>
+                                        </div>
+                                        <h4>$569K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>4 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>10,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="669000" data-bedrooms="5">
+                        <div class="card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Sunset Valley Retreat property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>Sunset Valley Retreat</h4>
+                                        </div>
+                                        <h4>$669K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>3 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>20,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="769000" data-bedrooms="6">
+                        <div class="card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Crystal Bay Residences property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>Crystal Bay Residences</h4>
+                                        </div>
+                                        <h4>$769K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>6 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>30,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="549000" data-bedrooms="3">
+                        <div class="card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Harbor Bay Residences property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>Harbor Bay Residences</h4>
+                                        </div>
+                                        <h4>$549K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>3 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>2 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="450000" data-bedrooms="6">
+                        <div class="card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Greenview Apartments property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>Greenview Apartments</h4>
+                                        </div>
+                                        <h4>$450K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>6 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>30,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-4" data-location="beverly hills, california" data-price="329000" data-bedrooms="3">
+                        <div class="card d-flex flex-column h-100 position-relative">
+                            <div
+                                class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <img src="image/dummy-img-900x600.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="LuxeGreen Villas property">
+                            <a href="">
+                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
+                                    style="margin-top: -105px;">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="d-flex flex-row gap-2 align-items-center">
+                                                <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                <span>Beverly Hills, California</span>
+                                            </div>
+                                            <h4>LuxeGreen Villas</h4>
+                                        </div>
+                                        <h4>$329K</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>3 Bads</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>2 Bath</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 link">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"
+                                                fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
+                                                <path
+                                                    d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
+                                                    stroke-width="0" />
+                                            </svg>
+                                            <span>5,000 sq.ft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="empty-state" class="text-center py-5" style="display: none;">
+                    <h3>No properties found</h3>
+                    <p>Try adjusting your filters or <a href="#" id="clear-filters-link" class="link">clear all filters</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bg-attach-cover" style="background-image: url(image/bg_cta.png);">
+            <!-- Section How It Work -->
+            <div class="r-container d-flex flex-column" style="gap: 140px;">
+                <div
+                    class="d-flex flex-xl-row flex-column gap-5 justify-content-between align-items-center position-relative  scrollanimation animated fadeIn adr-7">
+                    <div class="devider-progress"></div>
+                    <div class="d-flex flex-column gap-5 align-items-center">
+                        <div class="icon-box active position-relative">
+                            <i class="rtmicon rtmicon-search"></i>
+                            <div class="position-absolute top-0 end-0 p-1 align-items-center text-center justify-content-center rounded-pill bg-black-1"
+                                style="width: 36px; height: 36px; margin-top: -15px; margin-right: -15px;">
+                                <h6 class="accent-primary m-0">1.</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <h4>Explore Properties</h4>
+                            <p class="accent-color-4" style="max-width: 300px;">Browse a wide selection of properties to
+                                find the perfect home.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-5 align-items-center">
+                        <div class="icon-box position-relative">
+                            <i class="rtmicon rtmicon-client-happy"></i>
+                            <div class="position-absolute top-0 end-0 p-1 align-items-center text-center justify-content-center rounded-pill bg-black-1"
+                                style="width: 36px; height: 36px; margin-top: -15px; margin-right: -15px;">
+                                <h6 class="accent-primary m-0">2.</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <h4>Connect with Experts</h4>
+                            <p class="accent-color-4" style="max-width: 300px;">Get professional guidance from real
+                                estate experts to make informed.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-5 align-items-center">
+                        <div class="icon-box position-relative">
+                            <i class="rtmicon rtmicon-envelope-dollar"></i>
+                            <div class="position-absolute top-0 end-0 p-1 align-items-center text-center justify-content-center rounded-pill bg-black-1"
+                                style="width: 36px; height: 36px; margin-top: -15px; margin-right: -15px;">
+                                <h6 class="accent-primary m-0">3.</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <h4>Seal the Deal</h4>
+                                <p class="accent-color-4" style="max-width: 300px;">Navigate negotiations and finalize
+                                    transactions smoothly</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-center text-accent fst-italic  scrollanimation animated fadeInDown adr-7">EXPLORE PROPERTIES, CONNECT WITH EXPERTS, AND SEAL THE
+                    DEAL IS A STREAMLINED PROCESS THAT TAKES YOU
+                    FROM BROWSING A VARIETY OF PROPERTIES TO RECEIVING PROFESSIONAL ADVICE</h4>
+            </div>
+
+            <!-- Section CTA -->
+            <div class="r-container d-flex flex-column gap-3" style="margin-block: 6em;">
+                <div class="row row-cols-xl-2 row-cols-1 align-items-center">
+                    <div class="col col-xl-7 mb-3 scrollanimation animated fadeInLeft">
+                        <div class="d-flex flex-column gap-5 pe-xl-5">
+                            <h3>Ready to Start Your Real Estate Journey?</h3>
+                            <h6>Drop your Email</h6>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast"
+                                        class="toast success_msg_subscribe bg-dark-transparent text-white" role="alert"
+                                        aria-live="assertive" aria-atomic="true">
+                                        <div class="d-flex">
+                                            <div class="toast-body">
+                                                Your Subscribe Send Successfully!.
+                                            </div>
+                                            <button type="button" class="btn me-2 m-auto text-white"
+                                                data-bs-dismiss="toast" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form
+                                        class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                        novalidate>
+                                        <input type="text" name="action" value="subscribe" hidden>
+                                        <div class="input-group gap-3 mb-xl-2 mb-0 position-relative">
+                                            <input type="email"
+                                                class="form-control rounded-0 mb-xl-0 mb-3 subscribe"
+                                                placeholder="Sign Up to Newsletter" name="email" required>
+                                            <button
+                                                class="btn btn-accent submit_subscribe rounded-0 gap-2 px-4 py-3" type="submit"><i
+                                                    class="rtmicon rtmicon-arrow-right fw-bold"></i></button>
+                                            <div class="invalid-feedback text-white">
+                                                Please provide a valid email format (e.g.,
+                                                user@example.com).
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-5 mb-3 scrollanimation animated fadeInRight">
+                        <img src="image/dummy-img-900x600.jpg" class="img-fluid custom-border rounded-2 w-100" alt="Person using a laptop for real estate search">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="section position-relative bg-black-1" style="height: 90vh;">
+            <div class="row row-cols-xl-2 row-cols-1 h-100">
+                <div class="col col-xl-8 mb-3">
+                    <div class="d-flex flex-column gap-3 justify-content-between h-100">
+                        <div class="d-flex flex-column accent-primary">
+                            <p class="gray">Get Contact</p>
+                            <h1 class="fw-normal">info@vandoreheritage.lv</h1>
+                        </div>
+                        <img src="image/logo-footer.png?v=2025" alt="Vandore Heritage" class="img-fluid footer-logo" width="938">
+                    </div>
+                </div>
+                <div class="col col-xl-4 mb-3">
+                    <div class="d-flex flex-column gap-5 justify-content-between accent-primary h-100">
+                        <div class="d-flex flex-row gap-5">
+                            <ul class="list-unstyled d-flex flex-column gap-3 accent-color">
+                                <li>
+                                    <a href="index.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="properties.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        Properties
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="rentals.html" class="link active d-flex flex-row gap-3 align-items-center">
+                                        Rentals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-column gap-3">
+                                <a href="https://www.google.com/maps/place/Skanstes+iela+29A,+Vidzemes+priekšpilsēta,+Rīga,+LV-1013,+Latvia" class="link" target="_blank">
+                                    Skanstes iela 29A–91, Rīga, Latvia
+                                </a>
+                                <a href="tel:+37129713030" class="link">
+                                    +371 29 71 3030
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3">
+                            <div class="border-end pe-3 border-gray">
+                                <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    Terms &amp; Conditions
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    Privacy Notice
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="rtmicon rtmicon-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>

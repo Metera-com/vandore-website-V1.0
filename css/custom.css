@@ -1,0 +1,124 @@
+/* Vandore Heritage Brand Styles */
+
+.filter-bar {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(175, 164, 149, 0.4);
+    font-family: 'Ping Fang SC', sans-serif;
+}
+
+.filter-bar .form-group label {
+    text-transform: uppercase;
+    color: #5C5C5B;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.filter-bar .form-control {
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(175, 164, 149, 0.4);
+}
+
+.filter-bar .form-control:focus {
+    border-color: #480607;
+    box-shadow: 0 0 0 2px rgba(72, 6, 7, 0.25);
+}
+
+.filter-bar .btn-group .btn {
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: 1px solid rgba(175, 164, 149, 0.4);
+    color: #5C5C5B;
+}
+
+.filter-bar .btn-group .btn.active {
+    background-color: #480607;
+    color: #ffffff;
+    border-color: #480607;
+}
+
+.filter-bar .btn-group .btn:hover {
+    background-color: rgba(72, 6, 7, 0.1);
+}
+
+.filter-bar .btn-primary {
+    background-color: #480607;
+    border-color: #480607;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.filter-bar .btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    color: #5C5C5B;
+    height: 40px;
+}
+
+.active-filters .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #5C5C5B;
+}
+
+.active-filters .chip .remove-chip {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#property-count {
+    font-size: 13px;
+    color: #5C5C5B;
+}
+
+#empty-state {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+#empty-state a {
+    color: #480607;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+    .filter-bar .row > div {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter-bar .form-control,
+    .filter-bar .btn-group .btn,
+    .filter-bar .btn-primary,
+    .filter-bar .btn-secondary {
+        height: 36px;
+    }
+
+    .filter-drawer {
+        display: block;
+    }
+
+    .filter-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .filter-drawer {
+        display: none;
+    }
+}

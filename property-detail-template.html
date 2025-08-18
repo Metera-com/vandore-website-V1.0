@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/changes.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
     <link rel="icon" type="image/x-icon" href="image/red_LOGO_Vandore.png?v=2025">
-    <title>Vandore Heritage - Blog</title>
+    <title>Vandore Heritage - Property Details</title>
 </head>
 
 <body>
@@ -135,19 +134,18 @@
                     <div class="row row-cols-2">
                         <div class="col-3 col-xl-2"></div>
                         <div class="col-9 col-xl-10">
-                            <img src="image/dummy-img-1920x900.jpg" class="img-fluid custom-border rounded-2 w-100" alt="Vandore Heritage">
+                            <img src="../{{BANNER_IMAGE}}" class="img-fluid custom-border rounded-2 w-100" alt="{{PROPERTY_TITLE}}">
                         </div>
                     </div>
                 </div>
                 <div
                     class="d-flex flex-column gap-5 justify-content-between scrollanimation animated fadeInLeft adr-7 h-100 padding-custom">
                     <div class="d-flex flex-column gap-2 h-100">
-                        <h1 class="display" style="max-width: 700px;">Blog</h1>
+                        <h1 class="display">{{PROPERTY_TITLE}}</h1>
                         <div class="row row-xl-cols-2 row-cols-1">
                             <div class="col col-xl-2">
                                 <div class="d-flex flex-column gap-2 align-items-xl-center align-items-start">
-                                    <p>Stay updated with the latest real estate trends, tips, and market insights.
-                                    </p>
+                                    <p>{{PROPERTY_LOCATION}}</p>
                                     <div class="devider"></div>
                                 </div>
                             </div>
@@ -158,139 +156,127 @@
             </div>
         </div>
 
-        <!-- Section Blog & News -->
+        <!-- Section Properties Details -->
         <div class="section">
             <div class="r-container d-flex flex-column gap-5">
-                <div class="row row-cols-xl-2 row-cols-1 align-items-end">
+                <div class="row row-cols-xl-2 row-cols-1">
                     <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <h3 style="max-width: 600px;">Articles Related to Aestetic Home Design</h3>
+                        <img src="../{{MAIN_IMAGE}}" class="img-fluid rounded-2 h-100" alt="{{PROPERTY_TITLE}}">
                     </div>
                     <div class="col mb-3 scrollanimation animated fadeInDown adr-7">
-                        <div class="d-flex flex-column gap-2 align-items-end">
-                            <div class="w-max-content" style="justify-self: end;">
-                                <a href="blog.html"
-                                    class="btn btn-accent-outline d-flex flex-row gap-2 justify-content-center">
-                                    <span>Browse All Post</span>
-                                    <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                        <!-- GALLERY_IMAGES_HERE -->
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-8 mb-3">
+                        <div class="d-flex flex-column gap-4 position-relative">
+                            <h4>Description</h4>
+                            {{DESCRIPTION}}
+                            <div class="row row-cols-xl-2 row-cols-1">
+                                <!-- VIDEO_PLAYER_HERE -->
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-column gap-2">
+                                        <h4>Property Specifications </h4>
+                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                            <span>Property Type:</span>
+                                            <h6>Luxury House</h6>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                            <span>Bedrooms:</span>
+                                            <h6>{{BEDROOMS}}</h6>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                            <span>Bathrooms:</span>
+                                            <h6>{{BATHROOMS}}</h6>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                            <span>Building Area:</span>
+                                            <h6>{{AREA}} sq ft</h6>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                            <span>Floors:</span>
+                                            <h6>{{FLOORS}}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Additional Features</h4>
+                            <div class="d-flex flex-column gap-2">
+                                <!-- ADDITIONAL_FEATURES_HERE -->
+                            </div>
+                            <h4>Property Location</h4>
+                            <div class="position-relative h-100">
+                                <iframe loading="lazy" class="maps"
+                                    src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+                                    title="London Eye, London, United Kingdom"
+                                    aria-label="London Eye, London, United Kingdom"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-4 mb-3">
+                        <div class="d-flex flex-column gap-4 ps-xl-3">
+                            <h4 class="m-0">Latest Properties</h4>
+                            <hr class="m-0">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100 rounded-2" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
+                                <a href="">
+                                    <div class="d-flex flex-column black-1">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="d-flex flex-row gap-2 align-items-center">
+                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                    <span>Beverly Hills, California</span>
+                                                </div>
+                                            </div>
+                                            <h4>$669K</h4>
+                                        </div>
+                                        <h4>Sunset Valley Retreat</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100 rounded-2" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
+                                <a href="">
+                                    <div class="d-flex flex-column black-1">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="d-flex flex-row gap-2 align-items-center">
+                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                    <span>Beverly Hills, California</span>
+                                                </div>
+                                            </div>
+                                            <h4>$769K</h4>
+                                        </div>
+                                        <h4>Crystal Bay Residences</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100 rounded-2" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
+                                <a href="">
+                                    <div class="d-flex flex-column black-1">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="d-flex flex-row gap-2 align-items-center">
+                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
+                                                    <span>Beverly Hills, California</span>
+                                                </div>
+                                            </div>
+                                            <h4>$549K</h4>
+                                        </div>
+                                        <h4>Harbor Bay Residences</h4>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-xl-2 row-cols-1">
-                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Jan 05, 2025</p>
-                                        <p class="m-0">2 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">Discover unparalleled expertise in market</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Jan 04, 2025</p>
-                                        <p class="m-0">2 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">Tips for Choosing House Paint Colors to Look Elegant and Comfortable</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInRight adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Jan 03, 2025</p>
-                                        <p class="m-0">3 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">Modern and Functional Minimalist Home Design Inspirations</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInRight adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Jan 02, 2025</p>
-                                        <p class="m-0">4 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">Common Home Design Mistakes to Avoid for a More Functional Living Space</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Jan 01, 2025</p>
-                                        <p class="m-0">2 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">How to Create a Cozy Outdoor Patio for Relaxation and Entertainment</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <div class="card d-flex flex-column gap-4">
-                            <img src="image/dummy-img-600x400.jpg" alt="Vandore Heritage" class="img-fluid" style="aspect-ratio: 5/3;">
-                            <a href="single_blog.html">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex flex-row gap-3">
-                                        <p class="m-0">Dec 24, 2024</p>
-                                        <p class="m-0">3 min read</p>
-                                    </div>
-                                    <h4 class="black-1 font-1">The Benefits of Sustainable Home Design for a Greener Future</h4>
-                                    <p>
-                                        Discover Unparalleled Expertise in the Real Estate Market, Providing In-Depth
-                                        Knowledge, Strategic Insights, and Tailored Solutions to Help You Navigate Every
-                                        Step of Your Property Journey with Confidence.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+            </div>
+            <div class="modal fade bg-overlay" id="e119" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content bg-dark-color">
+                        <iframe class="ifr-video" src="https://www.youtube.com/embed/FK2RaJ1EfA8?autoplay=1"></iframe>
                     </div>
                 </div>
             </div>

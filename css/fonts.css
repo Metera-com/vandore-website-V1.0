@@ -1,0 +1,34 @@
+/* Font Definitions */
+
+/* 
+NOTE: This file assumes 'Safira March' and 'Ping Fang SC' are loaded.
+You may need to add @font-face rules or use a service like Google Fonts/Adobe Fonts.
+For example, if you have local font files:
+@font-face {
+    font-family: 'Safira March';
+    src: url('../fonts/SafiraMarch-Regular.woff2') format('woff2'),
+         url('../fonts/SafiraMarch-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+:root {
+    --font-primary: "Safira March", Georgia, "Times New Roman", Times, serif;
+    --font-secondary: "Ping Fang SC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Set base body font */
+body {
+    font-family: var(--font-secondary);
+}
+
+/* Primary Font for Headlines */
+h1, .display, h2, h3, h4, .font-1 {
+    font-family: var(--font-primary);
+}
+
+/* Secondary font for other headings and UI elements (overriding defaults if necessary) */
+h5, h6, .btn, .nav-link, .dropdown-item, .form-label, .form-control, .accordion-button {
+    font-family: var(--font-secondary);
+}

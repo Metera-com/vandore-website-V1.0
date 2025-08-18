@@ -5,93 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/changes.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
-    <link rel="icon" type="image/x-icon" href="image/logo.png?v=2025">
+    <link rel="icon" type="image/x-icon" href="image/red_LOGO_Vandore.png?v=2025">
     <title>Vandore Heritage - Homepage</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="sticky-top bg-accent-primary px-5">
+    <header class="bg-accent-primary px-5">
         <nav class="navbar">
             <div class="container-fluid ps-3 gap-3">
-                <div class="me-auto">
+                <div class="me-auto"></div>
+                <div class="logo-container position-absolute start-50 translate-middle-x" style="margin-top: 2cm;">
+                    <a class="navbar-brand" href="index.html"><img src="image/red_LOGO_Vandore.png?v=2025" alt="Vandore Heritage" class="img-fluid"></a>
+                </div>
+                <div class="w-max-content" style="margin-top: 0.5cm;">
                     <button class="btn btn-toggler-accent" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i>
+                        data-bs-target="#offcanvasDark" aria-controls="offcanvasDark"><i class="fa-solid fa-bars"></i>
                         Menu</button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
+                    <div class="offcanvas offcanvas-end offcanvas-fullwidth text-bg-dark" tabindex="-1"
+                        id="offcanvasDark" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header bg-transparent">
                             <h5 id="offcanvasRightLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        About
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Properties
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="properties.html">Properties</a></li>
-                                        <li><a class="dropdown-item" href="property_details.html">Property Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="price_plan.html">Pricing Plan</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                        <li><a class="dropdown-item" href="service.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Blogs
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
+                            <div class="r-container">
+                                <div class="row row-cols-xl-2 row-cols-1">
+                                    <div class="col col-xl-10 mb-3">
+                                        <div class="d-flex flex-column">
+                                            <div class="navigation">
+                                                <span class="header-text">01. Homepage</span>
+                                                <img src="image/img6.png" class="img-fluid rounded-3"
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="index.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">02. Properties</span>
+                                                <img src="image/img5.png" class="img-fluid rounded-3"
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="properties.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">03. Short Form Rentals</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3"
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="rentals.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">04. About Us</span>
+                                                <img src="image/img33.png" class="img-fluid rounded-3"
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="about.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">05. Services</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3"
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="service.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">06. Contact</span>
+                                                <img src="image/img29.png" class="img-fluid rounded-3 "
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="contact.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text">07. News</span>
+                                                <img src="image/img26.png" class="img-fluid rounded-3 "
+                                                    style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="blog.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-2 mb-3">
+                                        <div class="d-flex flex-column gap-5 accent-primary text-end">
+                                           <div class="d-flex flex-column gap-4">
+                                                <h6>Riga, Latvia</h6>
+                                                <div class="d-flex flex-column gap-3">
+                                                    <span>
+                                                        Skanstes iela 29A–91, Rīga, Latvia
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="logo-container me-auto">
-                    <a class="navbar-brand" href="#"><img src="image/logo.png?v=2025" alt="Vandore Heritage" class="img-fluid"></a>
-                </div>
-                <span>+1 (212) 555-1212</span>
-                <div class="w-max-content">
-                    <a href="contact.html" class="btn btn-accent-outline d-flex flex-row gap-3">
-                        <span>Contact Agents</span>
-                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
-                    </a>
                 </div>
             </div>
         </nav>
@@ -114,12 +142,11 @@
                 <div
                     class="d-flex flex-column gap-5 justify-content-between scrollanimation animated fadeInLeft adr-7 h-100 padding-custom">
                     <div class="d-flex flex-column gap-2 h-100">
-                        <h1 style="max-width: 700px;">Find Your Dream Property Today</h1>
-                        <div class="row row-xl-cols-2 row-cols-1">
-                            <div class="col col-xl-2">
+                        <h1 style="max-width: 800px;">This isn’t just business. It’s an attitude.</h1>
+                        <div class="row row-cols-1">
+                            <div class="col col-xl-4">
                                 <div class="d-flex flex-column gap-2 align-items-xl-center align-items-start">
-                                    <p>We are a trusted real estate team committed to helping you buy, sell, and invest
-                                        with confidence.</p>
+                                    <p>We represent properties that speak — and clients who value being heard. Vandore Heritage is our promise: to work with care, to stay present beyond the deal.</p>
                                     <div class="devider"></div>
                                     <a href="contact.html" class="btn btn-accent d-flex flex-row gap-3"
                                         style="width: max-content;">
@@ -140,13 +167,14 @@
             <div class="r-container d-flex flex-column gap-5">
                 <div class="row row-cols-xl-2 row-cols-1 align-items-end">
                     <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <h3>Your Trusted Real Estate Experts</h3>
+                        <h3>How to do things right.</h3>
                     </div>
                     <div class="col mb-3 scrollanimation animated fadeInDown adr-7">
                         <div class="d-flex flex-column gap-2 align-items-end">
                             <p class="text-end" style="max-width: 600px;">
-                                With expert knowledge and personalized service, we confidently guide you through the
-                                real estate market to find your perfect home.
+                                Vandore Heritage began with a conversation. Not about how to sell more, but about how to do things right. 
+                                Real estate is often seen as numbers, square meters, transactions. Vandore Heritage looks beyond — into how a space makes people feel, 
+                                how it shapes decisions and life, and what role professionals play in those stories.
                             </p>
                             <div class="w-max-content" style="justify-self: end;">
                                 <a href="about.html"
@@ -171,7 +199,7 @@
                                     </div>
                                 </div>
                                 <div class="position-absolute start-0 bottom-0 p-4" style="z-index: 3;">
-                                    <h5 class="accent-primary m-0">What is ROFARIA?</h5>
+                                    <h5 class="accent-primary m-0">What is Vandore Heritage?</h5>
                                 </div>
                                 <img src="image/dummy-img-600x700.jpg" class="img-fluid w-100" style="aspect-ratio: 6/7;" alt="Vandore Heritage">
                             </div>
@@ -198,7 +226,7 @@
                                         <span class="fun-fact">K</span>
                                         <span class="fun-fact">+</span>
                                     </div>
-                                    <h5 class="text-color-2">Setisfied Clients</h5>
+                                    <h5 class="text-color-2">Satisfied Clients</h5>
                                 </div>
                             </div>
                             <div class="col mb-3 scrollanimation animated fadeInRight adr-7">
@@ -516,8 +544,7 @@
                                 </svg>
                                 <h4>Property Buying Assistance</h4>
                             </div>
-                            <p>Helping you sell your property quickly and at the best price with expert marketing,
-                                negotiation, and closing support.</p>
+                            <p>Expert guidance to help you find, evaluate, and purchase the perfect property with ease and confidence.</p>
                             <a href="property_details.html"
                                 class="d-flex flex-row rounded-pill gap-2 align-items-center read-more">
                                 <span>Learn More</span>
@@ -539,8 +566,7 @@
                                 </svg>
                                 <h4>Property Selling Assistance</h4>
                             </div>
-                            <p>Expert guidance to help you find, evaluate, and purchase the perfect property with ease
-                                and confidence.</p>
+                            <p>Helping you sell your property quickly and at the best price with expert marketing, negotiation, and closing support.</p>
                             <a href="property_details.html"
                                 class="d-flex flex-row rounded-pill gap-2 align-items-center read-more">
                                 <span>Learn More</span>
@@ -619,266 +645,7 @@
                     </div>
                 </div>
                 <div class="tab-container">
-                    <div class="tab-content">
-                        <div class="content active" id="feature-1">
-                            <div class="d-flex flex-column h-100 position-relative">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.9)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <a href="">
-                                    <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
-                                        style="margin-top: -105px;">
-                                        <div class="d-flex flex-row justify-content-between">
-                                            <div class="d-flex flex-column gap-2">
-                                                <div class="d-flex flex-row gap-2 align-items-center">
-                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
-                                                    <span>Beverly Hills, California</span>
-                                                </div>
-                                                <h4>Luxury Home Advisors</h4>
-                                            </div>
-                                            <h4>$569K</h4>
-                                        </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>4 Bads</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>5 Bath</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>10,000 sq.ft</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content" id="feature-2">
-                            <div class="d-flex flex-column h-100 position-relative">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.7)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <a href="">
-                                    <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
-                                        style="margin-top: -105px;">
-                                        <div class="d-flex flex-row justify-content-between">
-                                            <div class="d-flex flex-column gap-2">
-                                                <div class="d-flex flex-row gap-2 align-items-center">
-                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
-                                                    <span>Beverly Hills, California</span>
-                                                </div>
-                                                <h4>Sunset Valley Retreat</h4>
-                                            </div>
-                                            <h4>$669K</h4>
-                                        </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>5 Bads</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>3 Bath</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>20,000 sq.ft</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content" id="feature-3">
-                            <div class="d-flex flex-column h-100 position-relative">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.8)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <a href="">
-                                    <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
-                                        style="margin-top: -105px;">
-                                        <div class="d-flex flex-row justify-content-between">
-                                            <div class="d-flex flex-column gap-2">
-                                                <div class="d-flex flex-row gap-2 align-items-center">
-                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
-                                                    <span>Beverly Hills, California</span>
-                                                </div>
-                                                <h4>Crystal Bay Residences</h4>
-                                            </div>
-                                            <h4>$769K</h4>
-                                        </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>6 Bads</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>5 Bath</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>30,000 sq.ft</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content" id="feature-4">
-                            <div class="d-flex flex-column h-100 position-relative">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.6)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <a href="">
-                                    <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4 black-1"
-                                        style="margin-top: -105px;">
-                                        <div class="d-flex flex-row justify-content-between">
-                                            <div class="d-flex flex-column gap-2">
-                                                <div class="d-flex flex-row gap-2 align-items-center">
-                                                    <i class="rtmicon rtmicon-location fw-bold"></i>
-                                                    <span>Beverly Hills, California</span>
-                                                </div>
-                                                <h4>Harbor Bay Residences</h4>
-                                            </div>
-                                            <h4>$549K</h4>
-                                        </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M440.77,233.93V80.84c0-25.44-19.98-46.15-44.52-46.15l-292.4-.07c-24.53,0-44.51,20.7-44.53,46.13l-.08,153.17c-28.16,7.53-49.12,33.8-49.15,65.26l-.08,98.51c0,4.89,1.94,9.59,5.4,13.06,3.47,3.46,8.16,5.41,13.06,5.41h7.4c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h359.41c-.7,1.95-1.24,3.98-1.24,6.17v24.62c.01,10.19,8.28,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-24.62c-.01-2.18-.56-4.2-1.25-6.14h7.39c10.19,0,18.46-8.27,18.46-18.46v-98.41c0-31.51-21.01-57.84-49.23-65.35ZM330,231.54h-160v-55.38c0-3.39,2.76-6.15,6.15-6.15h147.69c3.39,0,6.15,2.76,6.15,6.15v55.38ZM96.24,80.77c0-5,3.49-9.23,7.61-9.23l292.4.07c4.12,0,7.6,4.23,7.6,9.23v150.7h-36.92v-55.38c0-23.75-19.33-43.08-43.08-43.08h-147.69c-23.75,0-43.08,19.33-43.08,43.08v55.38h-36.91l.07-150.77ZM47.01,299.19c.01-16.95,12.8-30.73,28.5-30.73l349.09.05c15.71,0,28.49,13.8,28.49,30.77v79.95H46.94l.07-80.04Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>3 Bads</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M59.24,426.08v8.56c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-6.19s307.7.04,307.7.04v6.17c0,10.19,8.27,18.45,18.47,18.45h.01c10.19,0,18.45-8.27,18.45-18.47v-8.52c28.15-7.54,49.11-33.81,49.14-65.25l.06-73.87c.01-11.51-4.47-22.33-12.6-30.48-8.14-8.15-18.97-12.63-30.48-12.63H96.17V89.99c-.01-3.39,2.75-6.15,6.14-6.15h98.47c3.39,0,6.15,2.76,6.15,6.15v6.15h-6.15c-23.75,0-43.08,19.33-43.08,43.08v24.62c0,10.19,8.27,18.46,18.46,18.46h98.47c10.19,0,18.46-8.27,18.46-18.46v-24.62c0-23.75-19.33-43.08-43.08-43.08h-6.15v-6.15c0-23.75-19.33-43.08-43.08-43.08h-98.47c-23.75,0-43.08,19.33-43.08,43.08v153.85s-6.15,0-6.15,0c-23.75,0-43.08,19.33-43.08,43.08v73.8c0,31.51,21.01,57.85,49.24,65.35ZM256.17,139.23v6.15h-61.54v-6.15c0-3.39,2.76-6.15,6.15-6.15h49.23c3.39,0,6.15,2.76,6.15,6.15ZM46.92,286.92c0-3.39,2.76-6.15,6.15-6.15h393.84c2.22,0,3.68,1.13,4.35,1.8s1.8,2.14,1.8,4.36l-.06,73.87c-.01,16.95-12.8,30.73-28.5,30.73l-349.1-.05c-15.71,0-28.49-13.8-28.49-30.77v-73.8Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>2 Bath</span>
-                                            </div>
-                                            <div class="d-flex flex-row gap-2 link">
-                                                <svg xmlns="http://www.w3.org/2000/svg"  width="24"
-                                                    fill="CurrentColor" data-name="Layer 3" viewBox="0 0 500 500">
-                                                    <path
-                                                        d="M446.92,10H53.08c-23.75,0-43.08,19.33-43.08,43.08v393.85c0,23.75,19.33,43.08,43.08,43.08h393.85c23.75,0,43.08-19.33,43.08-43.08V53.08c0-23.75-19.33-43.08-43.08-43.08ZM446.92,453.08h-104.62v-68.86c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v68.86H53.08c-3.39,0-6.15-2.76-6.15-6.15v-179.7c1.94.7,3.97,1.24,6.15,1.24h73.85c10.19,0,18.46-8.27,18.46-18.46s-8.27-18.46-18.46-18.46H53.08c-2.18,0-4.21.55-6.15,1.24V53.08c0-3.39,2.76-6.15,6.15-6.15h178.47v68.86c0,10.19,8.25,18.46,18.45,18.46s18.46-8.27,18.46-18.46V46.92h178.46c3.39,0,6.15,2.76,6.15,6.15v178.46h-184.62v-39.77c0-10.19-8.27-18.46-18.46-18.46s-18.46,8.27-18.46,18.46v39.77h-30.77c-10.19,0-18.46,8.27-18.46,18.46s8.27,18.46,18.46,18.46h104.62v39.77c0,10.19,8.25,18.46,18.45,18.46s18.46-8.26,18.46-18.46v-39.77h110.77v178.46c0,3.39-2.76,6.15-6.15,6.15Z"
-                                                        stroke-width="0" />
-                                                </svg>
-                                                <span>5,000 sq.ft</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs">
-                        <div class="tab active" data-tab="feature-1">
-                            <div class="position-relative overflow-hidden">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary black-1 align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.9)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="feature-2">
-                            <div class="position-relative overflow-hidden">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary black-1 align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.7)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="feature-3">
-                            <div class="position-relative overflow-hidden">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary black-1 align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.8)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="feature-4">
-                            <div class="position-relative overflow-hidden">
-                                <div
-                                    class="position-absolute end-0 top-0 rounded-2 d-flex flex-row gap-1 mt-3 me-3 px-2 py-1 bg-accent-primary black-1 align-items-center">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <span>(4.6)</span>
-                                </div>
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                            </div>
-                        </div>
-                    </div>
+                    <!-- FEATURED_PROPERTIES_HERE -->
                 </div>
             </div>
         </div>
@@ -991,10 +758,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>The team at Royal Residence was fantastic! They provided expert guidance,
+                                        <p>The team at Vandore Heritage was fantastic! They provided expert guidance,
                                             answered all my questions, and made the process smooth. I’m very pleased
-                                            with my new home, thanks to their support!
-                                        </p>
+                                            with my new home, thanks to their support!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Emily White</h5>
@@ -1021,13 +787,11 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>Royal Residence made my home-buying experience smooth and
+                                        <p>Vandore Heritage made my home-buying experience smooth and
                                             enjoyable. Their
                                             team was professional, responsive, and dedicated to helping me
                                             find the
-                                            perfect property that suited my needs. I highly recommend their
-                                            services!
-                                        </p>
+                                            perfect property that suited my needs. I highly recommend their services!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Sarah Johnson</h5>
@@ -1054,11 +818,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>I had a great experience with the Royal Residence team. They
+                                        <p>I had a great experience with the Vandore Heritage team. They
                                             listened to my
-                                            needs and provided excellent options. Great service and very
-                                            knowledgeable!
-                                        </p>
+                                            needs and provided excellent options. Great service and very knowledgeable!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">John Smith</h5>
@@ -1085,10 +847,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>From start to finish, Royal Residence guided me through every step of the
+                                        <p>From start to finish, Vandore Heritage guided me through every step of the
                                             process. Their advice was invaluable, and they helped me secure a beautiful
-                                            home. I couldn’t be happier!
-                                        </p>
+                                            home. I couldn’t be happier!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Michael Brown</h5>
@@ -1121,13 +882,11 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>Royal Residence made my home-buying experience smooth and
+                                        <p>Vandore Heritage made my home-buying experience smooth and
                                             enjoyable. Their
                                             team was professional, responsive, and dedicated to helping me
                                             find the
-                                            perfect property that suited my needs. I highly recommend their
-                                            services!
-                                        </p>
+                                            perfect property that suited my needs. I highly recommend their services!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Sarah Johnson</h5>
@@ -1154,11 +913,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>I had a great experience with the Royal Residence team. They
+                                        <p>I had a great experience with the Vandore Heritage team. They
                                             listened to my
-                                            needs and provided excellent options. Great service and very
-                                            knowledgeable!
-                                        </p>
+                                            needs and provided excellent options. Great service and very knowledgeable!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">John Smith</h5>
@@ -1185,10 +942,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>From start to finish, Royal Residence guided me through every step of the
+                                        <p>From start to finish, Vandore Heritage guided me through every step of the
                                             process. Their advice was invaluable, and they helped me secure a beautiful
-                                            home. I couldn’t be happier!
-                                        </p>
+                                            home. I couldn’t be happier!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Michael Brown</h5>
@@ -1215,10 +971,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>The team at Royal Residence was fantastic! They provided expert guidance,
+                                        <p>The team at Vandore Heritage was fantastic! They provided expert guidance,
                                             answered all my questions, and made the process smooth. I’m very pleased
-                                            with my new home, thanks to their support!
-                                        </p>
+                                            with my new home, thanks to their support!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Emily White</h5>
@@ -1245,10 +1000,9 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-3">
-                                        <p>From start to finish, Royal Residence guided me through every step of the
+                                        <p>From start to finish, Vandore Heritage guided me through every step of the
                                             process. Their advice was invaluable, and they helped me secure a beautiful
-                                            home. I couldn’t be happier!
-                                        </p>
+                                            home. I couldn’t be happier!</p>
                                         <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column gap-2">
                                                 <h5 class="m-0 team-name">Michael Brown</h5>
@@ -1295,32 +1049,28 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
+                                            data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
                                             aria-controls="faq1">
-                                            What main services does ROFARIA offer?
+                                            Do you only work with luxury properties?
                                         </button>
                                     </h2>
                                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat
-                                            nibh. Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus,
-                                            ornare augue pellentesque, elementum turpis.
+                                            Partly. Focus is on exclusive properties, but also on projects with potential.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                            How can I start searching for properties on this website?
+                                            data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true" aria-controls="faq2">
+                                            What makes you different from other agencies?
                                         </button>
                                     </h2>
                                     <div id="faq2" class="accordion-collapse collapse show"
                                         data-bs-parent="#faqAccordion1">
                                         <div class="accordion-body">
-                                            Simply use the search feature on the homepage to filter properties by
-                                            location, price, number of rooms, and more. For personalized recommendations
-                                            or further assistance, feel free to contact our team.
+                                            We are a full-service, adaptable, and detailed-oriented company, combining sales, rentals, renovation, design, and legal support.
                                         </div>
                                     </div>
                                 </div>
@@ -1329,14 +1079,12 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
                                             aria-controls="faq3">
-                                            Can I sell my property through ROFARIA?
+                                            How fast can you put a property on the market?
                                         </button>
                                     </h2>
                                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat
-                                            nibh. Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus,
-                                            ornare augue pellentesque, elementum turpis.
+                                            Publication is fast, but most time goes into market analysis and precise pricing.
                                         </div>
                                     </div>
                                 </div>
@@ -1345,7 +1093,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
                                             aria-controls="faq4">
-                                            Are properties available in different price ranges?
+                                            Why use an agent?
                                         </button>
                                     </h2>
                                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
@@ -1353,6 +1101,7 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat
                                             nibh. Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus,
                                             ornare augue pellentesque, elementum turpis.
+                                            To avoid mistakes, maximize property potential, get strategy, quality presentation, communication, legal order, and peace of mind.
                                         </div>
                                     </div>
                                 </div>
@@ -1361,174 +1110,14 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
                                             aria-controls="faq5">
-                                            What main services does ROFARIA offer?
+                                            Do you manage short-term rentals?
                                         </button>
                                     </h2>
                                     <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat
-                                            nibh. Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus,
-                                            ornare augue pellentesque, elementum turpis.
+                                            Yes, we offer full management: setup, content, listings, pricing, guest communication, and maintenance.
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section Our Team -->
-        <div class="section">
-            <div class="r-container d-flex flex-column gap-5">
-                <div class="row row-cols-xl-2 row-cols-1 align-items-end">
-                    <div class="col mb-3 scrollanimation animated fadeInLeft adr-7">
-                        <h3 style="max-width: 600px;">We are Rofaria Professional team</h3>
-                    </div>
-                    <div class="col mb-3 scrollanimation animated fadeInDown adr-7">
-                        <div class="d-flex flex-column gap-2 align-items-end">
-                            <p>We are the Rofaria Professional Team, committed to delivering expert real estate services
-                                with integrity and a client-focused approach.</p>
-                            <div class="w-max-content" style="justify-self: end;">
-                                <a href="team.html"
-                                    class="btn btn-accent-outline d-flex flex-row gap-2 justify-content-center">
-                                    <span>View All Team</span>
-                                    <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-container">
-                    <div class="tab-content">
-                        <div class="content active" id="team-1">
-                            <div class="d-flex flex-column h-100">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4"
-                                    style="margin-top: -105px;">
-                                    <div class="d-flex flex-column gap-2">
-                                        <h4>Michael Brown</h4>
-                                        <span>Property Expert</span>
-                                    </div>
-                                    <div class="social-container" style="border-bottom-right-radius: 20px;">
-                                        <a href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content" id="team-2">
-                            <div class="d-flex flex-column h-100">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4"
-                                    style="margin-top: -105px;">
-                                    <div class="d-flex flex-column gap-2">
-                                        <h4>Jacob Carter</h4>
-                                        <span>Real Estate Consultant</span>
-                                    </div>
-                                    <div class="social-container" style="border-bottom-right-radius: 20px;">
-                                        <a href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content" id="team-3">
-                            <div class="d-flex flex-column h-100">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4"
-                                    style="margin-top: -105px;">
-                                    <div class="d-flex flex-column gap-2">
-                                        <h4>Casper Noor</h4>
-                                        <span>Investment Strategist</span>
-                                    </div>
-                                    <div class="social-container" style="border-bottom-right-radius: 20px;">
-                                        <a href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content" id="team-4">
-                            <div class="d-flex flex-column h-100">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="d-flex flex-column gap-5 rounded-2 p-4 bg-gray-hover mx-4"
-                                    style="margin-top: -105px;">
-                                    <div class="d-flex flex-column gap-2">
-                                        <h4>Emily White</h4>
-                                        <span>Marketing Specialist</span>
-                                    </div>
-                                    <div class="social-container" style="border-bottom-right-radius: 20px;">
-                                        <a href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com" class="social-item">
-                                            <i class="fa-brands fa-xs fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs">
-                        <div class="tab active" data-tab="team-1">
-                            <div class="position-relative overflow-hidden">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="position-absolute start-0 bottom-0 accent-primary p-4">
-                                    <h5>Michael Brown</h5>
-                                    <span>Property Expert</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="team-2">
-                            <div class="position-relative overflow-hidden">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="position-absolute start-0 bottom-0 accent-primary p-4">
-                                    <h5>Jacob Carter</h5>
-                                    <span>Real Estate Consultant</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="team-3">
-                            <div class="position-relative overflow-hidden">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="position-absolute start-0 bottom-0 accent-primary p-4">
-                                    <h5>Casper Noor</h5>
-                                    <span>Investment Strategist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" data-tab="team-4">
-                            <div class="position-relative overflow-hidden">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid w-100 h-100" style="aspect-ratio: 3/2;" alt="Vandore Heritage">
-                                <div class="position-absolute start-0 bottom-0 accent-primary p-4">
-                                    <h5>Emily White</h5>
-                                    <span>Marketing Specialist</span>
                                 </div>
                             </div>
                         </div>
@@ -1658,7 +1247,7 @@
                     <div class="d-flex flex-column gap-3 justify-content-between h-100">
                         <div class="d-flex flex-column accent-primary">
                             <p class="gray">Get Contact</p>
-                            <h1 class="fw-normal">hello@domainsite.com</h1>
+                            <h1 class="fw-normal">info@vandoreheritage.lv</h1>
                         </div>
                         <img src="image/logo-footer.png?v=2025" alt="Vandore Heritage" class="img-fluid" width="938">
                     </div>
@@ -1666,39 +1255,44 @@
                 <div class="col col-xl-4 mb-3">
                     <div class="d-flex flex-column gap-5 justify-content-between accent-primary h-100">
                         <div class="d-flex flex-row gap-5">
-                            <ul class="list ps-0 gap-3 accent-color">
+                            <ul class="list-unstyled d-flex flex-column gap-3 accent-color">
                                 <li>
-                                    <a href="" class="link active d-flex flex-row gap-3 align-items-center">
+                                    <a href="index.html" class="link active d-flex flex-row gap-3 align-items-center">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    <a href="about.html" class="link d-flex flex-row gap-3 align-items-center">
                                         About
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    <a href="properties.html" class="link d-flex flex-row gap-3 align-items-center">
                                         Properties
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    <a href="rentals.html" class="link d-flex flex-row gap-3 align-items-center">
+                                        Rentals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html" class="link d-flex flex-row gap-3 align-items-center">
                                         Service
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                    <a href="contact.html" class="link d-flex flex-row gap-3 align-items-center">
                                         Contact Us
                                     </a>
                                 </li>
                             </ul>
                             <div class="d-flex flex-column gap-3">
-                                <a href="https://www.facebook.com" class="link">
-                                    KLLG St, No.99, Pku City, ID 28289
+                                <a href="https://www.google.com/maps/place/Skanstes+iela+29A,+Vidzemes+priekšpilsēta,+Rīga,+LV-1013,+Latvia" class="link" target="_blank">
+                                    Skanstes iela 29A–91, Rīga, Latvia
                                 </a>
-                                <a href="https://www.instagram.com" class="link">
-                                    +1 (212) 555-1212
+                                <a href="tel:+37129713030" class="link">
+                                    +371 29 71 3030
                                 </a>
                             </div>
                         </div>
@@ -1721,6 +1315,9 @@
     </footer>
 
 
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="rtmicon rtmicon-arrow-up"></i></a>
+
     <!-- Scripts -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
@@ -1730,7 +1327,7 @@
     <script src="js/submit-form.js"></script>
     <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/video_embedded.js"></script>
-    <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/custom.js"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
 </body>

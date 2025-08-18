@@ -288,7 +288,6 @@ def main():
     else:
         build_blog()
 
-    build_blog()
     build_properties()
     print("\nSite build complete!")
 

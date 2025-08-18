@@ -8,3 +8,11 @@
   # This is the directory that contains the final website files.
   # Since our script generates files in the root, we use "." for the current directory.
   publish = "."
+
+[dev]
+  # Command to run the development server
+  command = "python build_site.py serve"
+  # The port that the development server will run on
+  targetPort = 8000
+  # The directory to serve files from
+  publish = "."

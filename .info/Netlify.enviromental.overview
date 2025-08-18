@@ -1,0 +1,144 @@
+---
+title: "Environment variables overview"
+description: "Learn about the different options for declaring and using environment variables, their limits, and overrides."
+---
+
+Netlify environment variables allow you to configure your site's build and functionality based on different parameters and deploy contexts.
+
+This page describes the different environment variable options at Netlify, their override rules, limitations, and how to get started.
+
+## Environment variables at Netlify
+
+Netlify offers a few different options for how you can [configure](/build/environment-variables/get-started/#create-environment-variables) and [use](/build/environment-variables/get-started/#use-environment-variables) environment variables:
+
+- There are two types of environment variables: shared environment variables that are available to all sites in your team and site environment variables set for specific sites. Site environment variables can override shared environment variables.
+- Environment variables have a key name, [scope](#scopes), and one or more [contextual values](#value-per-deploy-context). At Netlify, an environment variable's contextual value is the value set for a specific [deploy context](/deploy/deploy-overview#deploy-contexts). By default, environment variables are available to all scopes and have the same value for all deploy contexts.
+- You can mark environment variables as `Contains secret values` for additional access restrictions and security features with our [Secrets Controller](/build/environment-variables/secrets-controller) feature.
+- Netlify provides a set of [configuration variables](/build/configure-builds/environment-variables#netlify-configuration-variables) and [read-only variables](/build/configure-builds/environment-variables#read-only-variables) for use during the build process.
+- There is a [sensitive variable policy](/build/environment-variables/get-started/#sensitive-variable-policy) that you can configure to control access to sensitive variables for sites connected to public repositories.
+- You can use the Netlify [CLI](/api-and-cli-guides/cli-guides/get-started-with-cli#manage-environment-variables) and the Netlify [API](/api-and-cli-guides/api-guides/get-started-with-api#environment-variables) to access and modify environment variables stored on Netlify. Any updates made using the CLI or API will be reflected in the Netlify UI.
+- The Netlify UI offers the ability to review environment variables at a glance and to filter variables by key name, scope, and deploy context. Once you add a deploy context filter, you can use the Netlify UI to [copy the filtered data in `.env` format](/build/environment-variables/get-started/#export-variables-with-the-netlify-ui).
+- All environment variable changes made in the Netlify UI, CLI, and API are captured in the [team audit log](/manage/accounts-and-billing/team-management/team-audit-log) so you can keep track of any variables that you and other team members create, modify, or delete.
+
+For example, you can use the Netlify UI, CLI, or API to configure an environment variable that only functions can use and that has one value for use with production and another value for Deploy Previews:
+
+- Key: `API_KEY`
+- Scope: `Functions`
+- Values:
+  - Production: `a production secret`
+  - Deploy Previews: `a non-production secret`
+
+![Example list of environment variables with scopes and contextual values in the Netlify UI](/images/environment-variables-overview-environment-variables-list.png)
+
+## Configuration options and limitations
+
+Netlify supports two ways of setting and storing environment variables - with the Netlify UI, CLI, or API, or with a Netlify configuration file. Depending on which method you use, there are different environment variable options available.
+
+We recommend using the Netlify UI, CLI, or API, where possible, to avoid storing sensitive values in your repository.
+
+|  | [Netlify UI, CLI, or API](/build/environment-variables/get-started/#create-variables-with-the-netlify-ui-cli-or-api) | [Netlify configuration file](/build/environment-variables/get-started/#create-variables-with-a-netlify-configuration-file) |
+|---|:---:|:---:|
+| Stored on Netlify | &check; |  |
+| Stored in your repository |  | &check; |
+| Set site environment variables | &check; | &check; |
+| Set shared environment variables | &check; |  |
+| Set a single value that is available to all deploy contexts | &check; | &check; |
+| Set a different value for each deploy context | &check; | &check; |
+| Set specific scopes for variables| &check; |  |
+| Available to [builds](/build/configure-builds/environment-variables) | &check; | &check; |
+| Available to [Functions](/build/functions/overview), [Edge Functions](/build/edge-functions/overview), and [On-demand Builders](/build/configure-builds/on-demand-builders) | &check; |  |
+| Available to [snippet injection](/build/post-processing/snippet-injection/) | &check; | &check;|
+| Available to [forms](/manage/forms/spam-filters#custom-recaptcha-2) | &check; |  |
+| Available to [signed proxy redirects](/manage/routing/redirects/rewrites-proxies#signed-proxy-redirects) | &check; |  |
+| Changes captured in [team audit log](/manage/accounts-and-billing/team-management/team-audit-log) | &check; |  |
+
+### Value per deploy context
+By default, environment variables have one value that is available to all [deploy contexts](/deploy/deploy-overview#deploy-contexts). Alternatively, you can choose to set a different value for each of the following deploy contexts:
+
+- `Production`: for the main site's deployment.
+- `Deploy Previews`: for previews we build for your pull/merge requests.
+- `Branch deploys`: for all branch deploys. You can override this value on individual branches using a `Branch` value, outlined below.
+- `Preview server`: for any [Preview Servers](/manage/preview-servers/overview) running for that site. By default, this context inherits all values defined for `Local development`. Note that `Local development` environment variables cannot be marked as secret but you can mark environment variables as [secret](/build/environment-variables/secrets-controller/?utm_content=ask-netlify#manage-secret-values) with the Preview Server.
+- `Local development`: for local development using the Netlify CLI.
+
+You also have the option to set a `Branch` value for use on a specific branch, such as `staging` or `docs`. Optionally, you can target all branches matching a prefix, by adding a wildcard at the end of the branch name, for example `release/*` will match `release/1.0`, `release/alpha-0.1`, and so on. The `Branch` value will be used for deploy permalinks, Deploy Previews, and branch deploys for the specified branch.
+
+At Netlify, the value set for a specific deploy context is sometimes referred to as the environment variable's contextual value.
+
+The ability to set contextual values opens up more possibilities for how you can leverage environment variables on Netlify. For example:
+
+- Analytics or experiments you wish to run only on the live site in production
+- Modifying which CMS environment to use for production versus Deploy Previews
+- Adding new functionality that requires a specific token and testing the change in a Deploy Preview before it goes live
+
+### Scopes
+
+> **Pricing Information:** This feature is available on [Pro](https://www.netlify.com/pricing/?category=developer) and [Enterprise](https://www.netlify.com/pricing/?category=enterprise) plans.
+
+By default, environment variables apply to all scopes. Alternatively, you can limit variables to one or more of the following scopes:
+
+- **Builds**: includes [site builds](/build/configure-builds/overview). You can use environment variables with this scope during the build step to configure your site, framework, and function builds. Learn more about [build environment variables](/build/configure-builds/environment-variables).
+- **Functions**: includes [Functions](/build/functions/overview), [Edge Functions](/build/edge-functions/overview), and [On-demand Builders](/build/configure-builds/on-demand-builders). You can use environment variables with this scope to securely provide sensitive values for your functions to use while they run - values such as API keys and tokens. Learn more about [environment variables and functions](/build/functions/environment-variables).
+- **Runtime**: includes [forms](/manage/forms/spam-filters#netlify-provided-recaptcha-2) and [signed proxy redirects](/manage/routing/redirects/rewrites-proxies#signed-proxy-redirects). You can use environment variables with this scope to provide security tokens for your forms and redirects to use while your site runs in the browser.
+- **Post processing**: includes [snippet injection](/build/post-processing/snippet-injection/). You can use environment variables with this scope as Netlify serves your site in the browser - for example, you may add [data for the analytics script](/manage/monitoring/split-testing/#use-snippet-injection-for-more-flexibility) that you inject for split testing.
+
+By making variables available only to the scopes that need them, such as builds only or functions only, you can more tightly control where Netlify uses your sensitive data and avoid hitting any value [limits](#limitations) for certain scopes.
+
+### Overrides
+There are a few overrides to be aware of:
+  - Environment variables set in `netlify.toml` override environment variables set with the same key name using the Netlify UI, CLI, and API.
+  - If a site environment variable and a shared environment variable exist with the same key name, the site environment variable takes precedence for each of its scopes and for each deploy context it has a value for.
+  - If you set environment variable values for different deploy contexts, the [deploy context precedence rules](/build/configure-builds/file-based-configuration#deploy-contexts) apply.
+
+For example, if you use the Netlify UI to declare the following environment variables:
+
+| Variable type | Key | Scope | Contextual values |
+|---|---|---|---|
+| Shared | GREETING | all | <ul><li>Production: `hello`</li><li>Deploy Previews: `konnichiwa`</li><li>Branch:staging: `bonjour`</li></ul>|
+| Site | GREETING | builds | <ul><li>Production: `aloha`</li><li>Branch deploys: `guten tag`</li></ul>|
+
+The following values will be used for `GREETING`:
+
+<div class="brief-table-style">
+
+| Scope | Deploy context | Contextual value |
+|---|---|---|
+| Builds | Production | `aloha` |
+| Functions | Production | `hello` |
+| Builds | Deploy Previews | `konnichiwa` |
+| Builds | Branch deploy for branch `staging` | `bonjour` |
+| Builds | Branch deploys for all other branches except for `staging` | `guten tag` |
+| Functions | Local development (Netlify CLI) | `undefined` |
+
+</div>
+
+### Limitations
+The following limitations apply for environment variables:
+- **Reserved variable names**. Netlify offers some read-only environment variables for [builds](/build/configure-builds/environment-variables#read-only-variables) and [functions](/build/functions/environment-variables#netlify-read-only-variables). The keys used by these read-only variables are reserved by Netlify. You can't override these variables or their values.
+- **Accepted characters**. Keys can only include alphanumeric characters and underscores, and the first character must be a letter. For example, `KEY1` is valid but `1KEY` and `_KEY1` are not valid.
+- **Character and value limits**. Keys can contain up to 255 characters, and values can contain up to 5,000 characters. Values used by functions should fall within AWS's [environment property limits](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html).
+- **Shared variable access limitations**. Only Team Owners can read and edit shared environment variable values.
+
+## Get started
+
+We recommend you start using environment variables at Netlify by taking the following steps:
+
+1. Add and set [site environment variables](/build/environment-variables/get-started/#site-environment-variables) or [shared environment variables](/build/environment-variables/get-started/#shared-environment-variables) with the Netlify UI.
+2. Once you add a few variables, try to access or update your variables with the [Netlify CLI](/api-and-cli-guides/cli-guides/get-started-with-cli#manage-environment-variables) or the [API endpoints](/api-and-cli-guides/api-guides/get-started-with-api#environment-variables).
+3. Update your site code or configuration to [use environment variables](/build/environment-variables/get-started/#use-environment-variables) during the build process, in functions, and more.
+4. If your site is connected to a public repository, review your [sensitive variable policy settings](/build/environment-variables/get-started/#sensitive-variable-policy) to control whether untrusted deploys can access sensitive environment variables.
+5. Check the [team audit log](/manage/accounts-and-billing/team-management/team-audit-log) to review changes as you work with environment variables.
+
+## More environment variables resources
+- [Build environment variables](/build/configure-builds/environment-variables)
+- [Environment variables and functions](/build/functions/environment-variables)
+- Verified Support Guide on [how to use build environment variables](https://answers.netlify.com/t/support-guide-using-environment-variables-on-netlify-correctly/267)
+- [Get started guide - use environment variables with functions](/start/get-started-guide#use-environment-variables)
+- [Injecting environment variable values in your `netlify.toml` file](/build/configure-builds/file-based-configuration#inject-environment-variable-values)
+- [Environment variables for different deploy contexts](/deploy/deploy-overview#deploy-contexts)
+- [Configure your deploy environment](/deploy/manage-deploys/manage-deploys-overview#configure-your-deploy-environment)
+- [Deploy to Netlify button - require or set environment variables](/deploy/create-deploys#require-or-set-environment-variables)
+- [Environment variables for signed proxy redirects](/manage/routing/redirects/rewrites-proxies#signed-proxy-redirects)
+- [Gatsby environment variables](/build/frameworks/framework-setup-guides/gatsby/?gatsby-version=adapters#environment-variables)
+- [Hugo version environment variable](/build/frameworks/framework-setup-guides/hugo#hugo-version)
+- [Node.js functions runtime settings](/build/functions/optional-configuration/?fn-language=js#node-js-version-for-runtime-2)

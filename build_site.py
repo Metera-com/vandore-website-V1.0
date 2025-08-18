@@ -1,9 +1,14 @@
 import os
 import sys
-import sys
 import yaml
 import markdown2
 from datetime import datetime
+import http.server
+import socketserver
+import threading
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import time
 
 # --- CONFIGURATION ---
 POSTS_DIR = "_posts"
@@ -274,7 +279,7 @@ def build_properties():
         # This is a simplified implementation for the homepage tab system.
         # It will only show the first featured property.
         # A full implementation would require JS changes.
-        featured_html = generate_featured_property_tabs(featured_properties)
+        featured_html = generate_featured_property_html(featured_properties)
         final_home_html = home_template.replace(FEATURED_PROPERTIES_PLACEHOLDER, featured_html)
         with open(HOME_PAGE, 'w', encoding='utf-8') as f:
             f.write(final_home_html)
@@ -282,7 +287,7 @@ def build_properties():
 
 def main():
     """Main function to run all build steps."""
-    # Check if content directories exist
+    print("--- Running site build ---")
     if not os.path.isdir(POSTS_DIR):
         print(f"Warning: Directory '{POSTS_DIR}' not found. Blog generation will be skipped.")
     else:
@@ -291,5 +296,60 @@ def main():
     build_properties()
     print("\nSite build complete!")
 
+
+# --- Live Reload and Dev Server ---
+class ChangeHandler(FileSystemEventHandler):
+    """Rebuilds the site when a file changes."""
+    def on_any_event(self, event):
+        if event.is_directory:
+            return
+        print(f"-> Detected change in {event.src_path}. Rebuilding site...")
+        main()
+        print("-> Rebuild complete.")
+
+class RefreshHandler(http.server.SimpleHTTPRequestHandler):
+    """Handles POST requests to /__refresh to trigger a rebuild."""
+    def do_POST(self):
+        if self.path == '/__refresh':
+            print("\n-> Received /__refresh webhook. Rebuilding site...")
+            main()
+            print("-> Rebuild complete.")
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(b'OK')
+        else:
+            super().do_POST()
+
+def watch_files():
+    """Starts the file watcher."""
+    event_handler = ChangeHandler()
+    observer = Observer()
+    # Watch content and template directories
+    for path in [POSTS_DIR, PROPERTIES_DIR, "."]:
+        if os.path.isdir(path):
+            observer.schedule(event_handler, path, recursive=True if path != "." else False)
+    observer.start()
+    print("-> Watching for file changes...")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+
+def serve():
+    """Starts the development server and file watcher."""
+    PORT = 8000
+    main() # Initial build
+    watcher_thread = threading.Thread(target=watch_files, daemon=True)
+    watcher_thread.start()
+    with socketserver.TCPServer(("", PORT), RefreshHandler) as httpd:
+        print(f"-> Serving at http://localhost:{PORT}")
+        print("-> Press Ctrl+C to stop.")
+        httpd.serve_forever()
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == 'serve':
+        serve()
+    else:
+        main()

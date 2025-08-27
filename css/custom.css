@@ -207,10 +207,36 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .properties-page h1.display {
-    font-size: 2.5rem; /* Adjust as needed */
-    line-height: 1.2;
-    word-wrap: break-word;
-    word-break: break-word;
-  }
+    .section .padding-custom {
+        padding: 2rem 1rem !important;
+    }
+    
+    .section .padding-custom h1.display {
+        font-size: 3rem !important;
+        line-height: 1.2;
+        word-wrap: break-word;
+        word-break: break-word;
+        max-width: 100% !important;
+    }
+    
+    .section .padding-custom p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .section .padding-custom .row > .col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Ensure text content in banner is above the image */
+.section.bg-attach-cover .r-container > .padding-custom {
+    position: relative; /* Ensure z-index works */
+    z-index: 2; /* Place text above the image */
+}
+
+/* Optionally, ensure the image container is explicitly layered below */
+.section.bg-attach-cover .r-container > .position-absolute.top-0.start-0.end-0.bottom-0.h-100.w-100 {
+    z-index: 1; /* Place image below the text */
 }

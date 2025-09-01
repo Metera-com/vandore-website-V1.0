@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
     <link rel="icon" type="image/x-icon" href="image/red_LOGO_Vandore.png?v=2025">
     <title>Vandore Heritage - Blog</title>
+    <script>(function(){try{var l=localStorage.getItem('siteLang')||'lv';document.documentElement.setAttribute('lang',l==='lv'?'lv':'en');var m=document.querySelector('meta[property="og:locale"]');if(!m){m=document.createElement('meta');m.setAttribute('property','og:locale');document.head.appendChild(m);}m.setAttribute('content',l==='lv'?'lv_LV':'en_US');}catch(e){}})();</script>
 </head>
 
 <body>
@@ -27,6 +28,11 @@
                     <button class="btn btn-toggler-accent" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDark" aria-controls="offcanvasDark"><i class="fa-solid fa-bars"></i>
                         Menu</button>
+
+                    <div class="btn-group lang-switch" role="group" aria-label="Language switch">
+                        <button type="button" class="btn btn-toggler-accent lang-btn" data-lang="en" aria-pressed="false" id="lang-en" aria-label="Switch to English">EN</button>
+                        <button type="button" class="btn btn-toggler-accent lang-btn" data-lang="lv" aria-pressed="false" id="lang-lv" aria-label="Pārslēgt uz latviešu valodu">LV</button>
+                    </div>
 
                     <div class="offcanvas offcanvas-end offcanvas-fullwidth text-bg-dark" tabindex="-1"
                         id="offcanvasDark" aria-labelledby="offcanvasRightLabel">
@@ -387,6 +393,7 @@
     <script src="js/video_embedded.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/i18n.js"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
 </body>

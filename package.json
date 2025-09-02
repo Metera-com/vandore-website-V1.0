@@ -1,0 +1,12 @@
+{
+  "name": "real-estate-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HTML/CSS/JS site with a simple dev server",
+  "scripts": {
+    "dev": "http-server -p 3000 -a 0.0.0.0 -c-1 ."
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

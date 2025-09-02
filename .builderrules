@@ -1,0 +1,50 @@
+Project Context for AI Assistant
+1. High-Level Overview
+
+This project is a static HTML website for a real estate company called "Vendore". The site is built using a combination of static HTML pages and a custom Python script that generates content for blog posts and property listings from Markdown files. It is designed to be visually rich and is integrated with Stackbit for visual editing.
+
+2. Core Technologies & Build Process
+
+Static Site Generator: The core of the content generation is a Python script: build_site.py.
+This script reads Markdown files (.md) from the _posts and _properties directories.
+It parses YAML front matter from these files to get metadata (e.g., title, price, date).
+It converts the Markdown content into HTML.
+It injects this generated HTML into template pages (property-detail-template.html, blog-post-template.html) to create individual detail pages.
+It also dynamically updates the main listing pages (properties.html, blog.html) and the homepage (index.html) with summaries and featured content.
+Content Source: All dynamic content (blog posts, properties) is stored as Markdown files with YAML front matter. This is configured for use with Stackbit, as defined in stackbit.config.js.
+Frontend:
+HTML: Standard HTML5.
+CSS: Bootstrap 5 is the primary framework. Custom styles are located in css/style.css and css/custom.css.
+JavaScript: The site uses jQuery (js/vendor/jquery.js) and the Bootstrap JS bundle. Custom interactivity is written in js/custom.js. Other libraries include Swiper.js for carousels (swiper-script.js) and Isotope for masonry layouts (masonry.js).
+Backend: A single PHP file (php/form_process.php) is present, likely for handling contact form submissions.
+3. Key Files & Directories
+
+build_site.py: The most important file. Run this script (python build_site.py) after changing any content in the _posts or _properties directories to see the changes reflected in the HTML files.
+_properties/: Folder containing all property listings as Markdown files.
+_posts/: Folder containing all blog articles as Markdown files.
+property-detail-template.html: The HTML template for a single property page.
+properties.html: The main property listing page. The Python script injects property cards here.
+index.html: The homepage. The Python script injects featured properties here.
+css/style.css & css/custom.css: Main stylesheets for custom looks.
+js/custom.js: Main file for custom JavaScript functionality (e.g., property filtering).
+stackbit.config.js: Defines the content models (schemas) for 'BlogPost' and 'Property', used by the Stackbit visual editor.
+4. How to Make Edits
+
+To Add/Edit a Property:
+
+Create or edit a Markdown file in the _properties/ directory.
+Fill out the YAML front matter according to the schema in stackbit.config.js (title, price, location, bedrooms, images, etc.).
+Write the main description in Markdown below the front matter.
+Run the command python build_site.py in your terminal. This will generate the new HTML page in the /properties directory and update the listings on properties.html and index.html.
+To Change Website Styling:
+
+Modify css/custom.css for general style changes or css/style.css for base styles.
+To Change Static Page Content (e.g., About Us page):
+
+Directly edit the corresponding HTML file, such as about.html.
+To Change Website Functionality (e.g., filters, sliders):
+
+Modify js/custom.js or the relevant script file in the js/ directory.
+To Run a Local Development Server:
+
+You can run the command python build_site.py serve. This will start a local server at http://localhost:8000 and automatically watch for file changes in the content folders, rebuilding the site on the fly.

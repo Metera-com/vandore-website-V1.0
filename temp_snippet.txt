@@ -1,0 +1,51 @@
+﻿                                                <a href="index.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="02_properties">02. ÄªpaÅ¡umi</span>
+                                                <img src="image/img5.png" class="img-fluid rounded-3" style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="properties.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="03_short_form_rentals">03. Äªsas formas Ä«re</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3" style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="rentals.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="04_about_us">04. Par mums</span>
+                                                <img src="image/img33.png" class="img-fluid rounded-3" style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="about.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="05_services">05. Pakalpojumi</span>
+                                                <img src="image/img18.png" class="img-fluid rounded-3" style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="service.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="06_contact">06. Sazinieties</span>
+                                                <img src="image/img29.png" class="img-fluid rounded-3 " style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="contact.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>
+                                            </div>
+                                            <hr>
+                                            <div class="navigation">
+                                                <span class="header-text" data-i18n="07_news">07. Jaunumi</span>
+                                                <img src="image/img26.png" class="img-fluid rounded-3 " style="aspect-ratio: 9/5;" height="175" width="311" alt="Vandore Heritage">
+                                                <a href="blog.html" class="d-flex" style="justify-self: end;">
+                                                    <i class="rtmicon rtmicon-arrow-right fs-1 fw-bold"></i>
+                                                </a>

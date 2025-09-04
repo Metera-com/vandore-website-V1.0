@@ -198,6 +198,22 @@
     border-radius: 4px;
 }
 
+/* Home hero responsive image behavior */
+.hero-img-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+  .hero-img-desktop {
+    display: none !important;
+  }
+
+  .hero-img-mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 .offcanvas-body::-webkit-scrollbar-thumb:hover {
     background: #555;
 }

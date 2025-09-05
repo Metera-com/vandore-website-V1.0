@@ -1,3 +1,0 @@
-PyYAML
-markdown2
-watchdog
